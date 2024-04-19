@@ -1,18 +1,23 @@
 // App.js
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import HomePage from './pages/HomePage';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import Home from './pages/Home';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home/>
+  },
+]);
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <Switch>
-          <Route path="/" exact component={HomePage} />
-          {/* Add more routes here if needed */}
-        </Switch>
-      </div>
-    </Router>
+    <div>
+        <RouterProvider router={router} />
+    </div>
   );
 }
 
