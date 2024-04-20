@@ -5,10 +5,10 @@ import { Box } from "@mui/material";
 
 const Home = () => {
   return (
-    <Box sx={{}}>
+    <>
       <Navbar />
       <Searchbar />
-    </Box>
+    </>
   );
 };
 

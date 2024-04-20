@@ -29,9 +29,9 @@ const Navbar = () => {
                   href=""
                   sx={{
                     display: { md: "flex" },
-                    fontFamily: "sans",
+                    fontFamily: "lato",
                     fontWeight: 700,
-                    letterSpacing: -3,
+                    letterSpacing: -1,
                     textDecoration: "none",
                     fontSize: "30.56px",
                     color: "#5A189A",
@@ -47,6 +47,7 @@ const Navbar = () => {
                   variant="body1"
                   sx={{
                     fontSize: "14px",
+                    fontFamily: "lato",
                     fontWeight: 400,
                     color: "black",
                   }}
