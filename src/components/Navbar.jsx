@@ -80,8 +80,8 @@ const Navbar = () => {
                       borderRadius: "50px",
                       backgroundColor: "#5A189A",
                       fontSize: "12px",
-                      padding: "10px 20px",
-                      marginRight: "20px",
+                      padding: "5px 30px",
+                      marginLeft: "20px",
                     }}
                   >
                     LIST YOUR BUISNESS
@@ -93,14 +93,14 @@ const Navbar = () => {
                       borderColor: "#5A189A",
                       color: "#5A189A",
                       fontSize: "12px",
-                      padding: "10px 20px",
-                      marginRight: "20px",
+                      padding: "5px 30px",
+                      marginLeft: "30px",
                     }}
                   >
                     NEWS FEED
                   </Button>
                 </Box>
-                <Box sx={{ flexGrow: 0 }}>
+                <Box sx={{ flexGrow: 0, marginLeft:"25px"}}>
                   <IconButton
                     sx={{
                       "&:hover": {
