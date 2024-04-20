@@ -15,6 +15,7 @@ const Navbar = () => {
     <AppBar
       position="static"
       style={{ backgroundColor: "transparent", boxShadow: "none" }}
+      sx={{ py: 2 }}
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
