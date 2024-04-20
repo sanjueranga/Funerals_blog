@@ -5,6 +5,7 @@ import Grid from "@mui/material/Grid";
 import Post from "../components/Post";
 import Container from "@mui/material/Container";
 import SidePanel from "../components/SidePanel";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
           <SidePanel />
         </Grid>
       </Container>
+      <Footer />
     </>
   );
 };
