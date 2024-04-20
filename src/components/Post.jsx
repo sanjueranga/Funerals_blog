@@ -8,7 +8,15 @@ const Post = ({ title, publishedAt, body }) => {
       <Paper sx={{ padding: (theme) => theme.spacing(2) }}>
         {" "}
         <Stack spacing={1}>
-          <Typography variant="h6">{title || "Dummy Title"}</Typography>{" "}
+          <Typography
+            variant="h3"
+            sx={{
+              fontSize: "24px",
+              fontFamily: "lato",
+            }}
+          >
+            {title || "How to Deal with Loss in the Workplace"}
+          </Typography>{" "}
           <Typography variant="body2" color="text.secondary">
             {publishedAt || "Published at: Unknown"}{" "}
           </Typography>

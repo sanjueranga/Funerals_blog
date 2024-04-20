@@ -22,7 +22,7 @@ const SearchBar = () => {
                 fontFamily: "lato",
                 fontWeight: 700,
                 textDecoration: "none",
-                fontSize: "30.56px",
+                fontSize: "24px",
                 color: "white",
                 py: 3,
               }}
