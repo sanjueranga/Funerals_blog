@@ -16,12 +16,12 @@ const Searchbar = () => {
             href=""
             sx={{
               display: { md: "flex" },
-              fontFamily: "monospace",
+              fontFamily: "lato",
               fontWeight: 700,
-              letterSpacing: -3,
               textDecoration: "none",
               fontSize: "30.56px",
               color: "white",
+              py: 3,
             }}
           >
             Blog
