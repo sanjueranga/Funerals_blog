@@ -5,6 +5,8 @@ import { Box } from "@mui/material";
 import Avatar from "@mui/material/Avatar";
 import headerImage from "../static/images/unsplash_7RWBSYA9Rro.jpg";
 import avatarImage from "../static/images/avatar.jpg";
+import PostBody from "./PostBody";
+
 
 const Post = ({ title, publishedAt, body }) => {
   return (
@@ -32,7 +34,7 @@ const Post = ({ title, publishedAt, body }) => {
         </Typography>
       </Box>
 
-      <Paper sx={{ padding: (theme) => theme.spacing(2) }}>
+      <Paper sx={{ padding: (theme) => theme.spacing(5) }}>
         <Stack spacing={2} direction="column">
           {" "}
           <Box component="section">
@@ -69,7 +71,8 @@ const Post = ({ title, publishedAt, body }) => {
             </Box>
           </Stack>
           <Stack spacing={2} alignItems="center">
-            <Typography>{body || "Post content"}</Typography>
+           
+            <PostBody />
           </Stack>
         </Stack>
       </Paper>
