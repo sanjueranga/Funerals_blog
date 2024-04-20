@@ -1,7 +1,12 @@
 import React from "react";
-import { Box, Typography, Container, Grid } from "@mui/material";
-import IconButton from "@mui/material/IconButton";
-import Link from "@mui/material/Link";
+import {
+  Box,
+  Typography,
+  Container,
+  Grid,
+  IconButton,
+  Link,
+} from "@mui/material";
 import facebookIcon from "../static/images/facebook.png";
 import twitterIcon from "../static/images/twitter.png";
 import youtubeIcon from "../static/images/youtube.png";
@@ -10,11 +15,7 @@ import instagramIcon from "../static/images/insta.png";
 const socialLinks = [
   { icon: facebookIcon, link: "https://www.facebook.com/", name: "facebook" },
   { icon: twitterIcon, link: "https://www.twitter.com/", name: "facebook" },
-  {
-    icon: instagramIcon,
-    link: "https://www.instagram.com/",
-    name: "facebook",
-  },
+  { icon: instagramIcon, link: "https://www.instagram.com/", name: "facebook" },
   { icon: youtubeIcon, link: "https://www.youtube.com/", name: "facebook" },
 ];
 
@@ -34,7 +35,7 @@ const Footer = () => {
   return (
     <Box sx={{ bgcolor: "background.paper", mt: "auto", py: 6 }}>
       <Container maxWidth="xl">
-        <Grid container spacing={2}>
+        <Grid container spacing={0}>
           <Grid item xs={6}>
             {socialLinks.map((socialLink) => (
               <IconButton size="small" href={socialLink.link}>
@@ -43,13 +44,19 @@ const Footer = () => {
                   alt={socialLink.name}
                   width="24"
                   height="24"
+                  style={{ marginRight: "10px" }} // Add margin for spacing
                 />
               </IconButton>
             ))}
           </Grid>
           <Grid item xs={6} align="right">
             {websiteLinksFirstRow.map((link) => (
-              <Link key={link.title} underline="none" color="text.secondary">
+              <Link
+                key={link.title}
+                underline="none"
+                color="text.secondary"
+                style={{ marginRight: "20px" }}
+              >
                 {link.title}
               </Link>
             ))}
@@ -61,7 +68,12 @@ const Footer = () => {
           </Grid>
           <Grid item xs={6} align="right">
             {websiteLinksSecondRow.map((link) => (
-              <Link key={link.title} underline="none" color="text.secondary">
+              <Link
+                key={link.title}
+                underline="none"
+                color="text.secondary"
+                style={{ marginRight: "20px" }}
+              >
                 {link.title}
               </Link>
             ))}
