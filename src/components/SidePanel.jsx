@@ -40,7 +40,7 @@ const SidePanel = () => {
 
   return (
     <Grid item xs={4}>
-      <Box sx={{ py: 20 }}>
+      <Box sx={{ py: 20, paddingLeft: 20 }}>
         {adsData.map((ad) => (
           <Box sx={{ paddingBottom: "30px" }}>
             <AdvertisementCard key={ad.header} {...ad} />
