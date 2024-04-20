@@ -9,6 +9,7 @@ import IconButton from "@material-ui/core/IconButton";
 import Grid from "@mui/material/Grid";
 import Button from "@mui/material/Button";
 import Avatar from "@mui/material/Avatar";
+import avatarImage from "../static/images/avatar.jpg";
 
 const Navbar = () => {
   return (
@@ -100,7 +101,7 @@ const Navbar = () => {
                     NEWS FEED
                   </Button>
                 </Box>
-                <Box sx={{ flexGrow: 0, marginLeft:"25px"}}>
+                <Box sx={{ flexGrow: 0, marginLeft: "25px" }}>
                   <IconButton
                     sx={{
                       "&:hover": {
@@ -110,7 +111,8 @@ const Navbar = () => {
                   >
                     <Avatar
                       alt="Avatar"
-                      src="https://lh3.googleusercontent.com/a/ACg8ocJqMY68RYuFXQg2FtU0ZncfshtkocGP3L00k5ZojTVpx0ZbrVl0=s288-c-no"
+                      src={avatarImage}
+                      sx={{ width: 60, height: 60 }}
                     />
                   </IconButton>
                 </Box>
