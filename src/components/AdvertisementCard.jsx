@@ -42,6 +42,7 @@ export default function AdvertisementCard({ image, logo, header, subtitle }) {
               sx={{
                 borderRadius: "50px",
                 color: "#5A189A",
+                fontWeight:"700",
                 backgroundColor: "white",
                 fontSize: "14px",
                 padding: "10px 40px",

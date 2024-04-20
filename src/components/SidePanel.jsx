@@ -7,6 +7,7 @@ import addImage3 from "../static/images/add3.png";
 import addImage4 from "../static/images/add4.png";
 import logo1 from "../static/images/logo_1.png";
 import logo2 from "../static/images/birks 2.png";
+import { Box } from "@mui/material";
 
 const SidePanel = () => {
   const adsData = [
@@ -19,30 +20,33 @@ const SidePanel = () => {
     },
     {
       image: addImage2,
-      header: "Header 2",
+      header: "We are here for you...",
       subtitle: "Subtitle 2",
-      buttonText: "Shop Now",
       logo: logo2,
     },
     {
       image: addImage3,
-      header: "Header 3",
-      subtitle: "Subtitle 3",
-      buttonText: "Learn More",
+      header: "Find the best funeral directors",
+      subtitle:
+        "Venenatis, quis risus justo, nisl, lorem venenatis. Nunc, pulvinar amet in odio ac tellus",
     },
     {
       image: addImage4,
       header: "Header 4",
-      subtitle: "Subtitle 4",
-      buttonText: "Visit Us",
+      subtitle:
+        "Venenatis, quis risus justo, nisl, lorem venenatis. Nunc, pulvinar amet in odio ac tellus",
     },
   ];
 
   return (
     <Grid item xs={4}>
-      {adsData.map((ad) => (
-        <AdvertisementCard key={ad.header} {...ad} />
-      ))}
+      <Box sx={{ py: 20 }}>
+        {adsData.map((ad) => (
+          <Box sx={{ paddingBottom: "30px" }}>
+            <AdvertisementCard key={ad.header} {...ad} />
+          </Box>
+        ))}
+      </Box>
     </Grid>
   );
 };
